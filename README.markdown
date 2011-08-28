@@ -3,7 +3,7 @@
 [3t]:http://tecnoyucas.tumblr.com/post/9470070489/bases-de-tecnoyucas "Bases de TecnoYucas"
 [3g]:https://github.com/tecnoyucas/Documentos-de-TecnoYucas/blob/master/tecnoyucas_bases_27_08_2011.markdown "Bases de TecnoYucas"
 [4]:http://twitter.com/tecnoyucas "Twitter de TecnoYucas"
-[4]:http://tecnoyucas.blogspot.com "Antiguo TecnoYucas"
+[5]:http://tecnoyucas.blogspot.com "Antiguo TecnoYucas"
 
 
 # TecnoYucas #
