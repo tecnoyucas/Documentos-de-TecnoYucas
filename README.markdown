@@ -1,8 +1,7 @@
 # TecnoYucas #
 
-... **...** 123 abc 
+TecnoYucas es un equipo abierto de internautas, tecnólogos y afines interesados en aprender, compartir y difundir conocimientos tecnológicos, además de participar en actividades para el desarrollo de contenidos, herramientas y eventos relacionados con estos intereses.
 
-1. a
-2. b
-3. c
-
+* [Página principal](http://tecnoyucas.org/)
+* [Tumblr de yucazos](http://yucazos.tumblr.com/)
+* [Bases](http://tecnoyucas.tumblr.com/post/9470070489/bases-de-tecnoyucas)
