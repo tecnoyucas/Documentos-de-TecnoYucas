@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g>
+  <g id="svg_7">
+   <ellipse ry="184.500008" rx="184.500008" id="svg_1" cy="223.925848" cx="314.499992" stroke-width="0" stroke="#000000" fill="#3b96ba"/>
+   <ellipse id="svg_3" ry="129.786221" rx="129.786221" cy="223.925846" cx="314.499996" stroke-width="0" stroke="#000000" fill="#ffffff"/>
+   <rect ry="31" rx="31" id="svg_5" height="222.672436" width="63.620691" y="57.239631" x="282.689647" stroke-width="0" stroke="#000000" fill="#3b96ba"/>
+   <rect id="svg_6" ry="31" rx="31" height="143.782775" width="63.620691" y="332.717232" x="282.689647" stroke-width="0" stroke="#000000" fill="#ffffff"/>
+  </g>
+  <title>Layer 1</title>
+  <path id="svg_11" d="m343.500031,350.5l3.894806,55c0.556335,-15.833008 3.894714,-40.166992 1.669159,-47.5" stroke-width="0" stroke="#000000" fill="#1d6fa3"/>
+  <path id="svg_10" d="m286,350.5l-3.5,55c-0.5,-15.833344 -3.5,-40.166656 -1.5,-47.5" stroke-width="0" stroke="#000000" fill="#1d6fa3"/>
+  <path id="svg_14" d="m349.446564,357.5c60.242004,-7.166992 121.970459,-81.833008 90.115936,-171.5c23.766815,88.666992 -38.125977,153.333008 -95.5625,165l5.446564,6.5z" stroke-width="0" stroke="#000000" fill="#88b9c9"/>
+  <path id="svg_13" d="m280.5,357.5c-60.833328,-7.166656 -123.166672,-81.833313 -91,-171.5c-24,88.666687 38.5,153.333344 96.5,165l-5.5,6.5z" stroke-width="0" stroke="#000000" fill="#88b9c9"/>
+ </g>
+</svg>
