@@ -23,7 +23,7 @@ TecnoYucas es un equipo abierto de internautas, tecnólogos y afines interesados
 
 ### Últimos Avances ###
 
-* Elaborada la [Primera Yuca](https://github.com/tecnoyucas/Documentos-de-TecnoYucas/blob/master/yucas/danielR_00_Siguiendo_al_puntero_con_el_canvas_de_HTML5.markdown "Siguiendo al puntero con el canvas de HTML5") con la nueva metodología.
+* Elaborada la [Primera Yuca](https://github.com/tecnoyucas/Documentos-de-TecnoYucas/blob/master/yucas/sadasant_00_Siguiendo_al_puntero_con_el_canvas_de_HTML5.markdown "Siguiendo al puntero con el canvas de HTML5") con la nueva metodología.
 * Elaboradas las [Nuevas Bases][3g].
 * Enviado el documento a los yuqueros actuales.
 * Creado el canal IRC en irc.freenode.net bajo el nombre #TecnoYucas.
