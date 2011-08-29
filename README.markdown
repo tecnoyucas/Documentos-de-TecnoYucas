@@ -4,6 +4,7 @@
 [3g]:https://github.com/tecnoyucas/Documentos-de-TecnoYucas/blob/master/tecnoyucas_bases_27_08_2011.markdown "Bases de TecnoYucas"
 [4]:http://twitter.com/tecnoyucas "Twitter de TecnoYucas"
 [5]:http://tecnoyucas.blogspot.com "Antiguo TecnoYucas"
+[6]:https://github.com/tecnoyucas/Documentos-de-TecnoYucas/blob/master/yucas/sadasant_01_Empezando_con_Markdown.markdown "Empezando con Markdown"
 
 
 # TecnoYucas #
@@ -28,6 +29,7 @@ TecnoYucas es un equipo abierto de internautas, tecnólogos y afines interesados
 * Enviado el documento a los yuqueros actuales.
 * Creado el canal IRC en irc.freenode.net bajo el nombre #TecnoYucas.
 * Creado este GitHub.
+* Creada [guía de cómo utilizar Markdown][6].
 
 ### Por Hacer ###
 

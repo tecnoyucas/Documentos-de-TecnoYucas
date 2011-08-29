@@ -45,7 +45,7 @@ Con la intención de agilizar el proceso de desarrollo de tutoriales, y aún as�
 5. **Conclusión:** De un párrafo, sin un título, pegado al resto de contenido.
 
 # Documentos #
-Todos los documentos de TecnoYucas se deberán llevar a cabo utilizando el [formato de Markdown][2], para más detalles pueden acceder a nuestra [guía de cómo utilizarlo][7]. Para que todos podamos participar en el desarrollo del equipo, este y el resto de los documentos base de TecnoYucas, así como los documentos de planificación de los eventos, estarán disponibles en [nuestro Github][3].
+Todos los documentos de TecnoYucas se deberán llevar a cabo utilizando el [formato de Markdown][2], pueden ver más detalles en nuestra [guía de cómo utilizarlo][7]. Para que todos podamos participar en el desarrollo del equipo, este y el resto de los documentos base de TecnoYucas, así como los documentos de planificación de los eventos, estarán disponibles en [nuestro Github][3].
 
 # Comunicaciónes #
 El chat general de tecnoyucas se llevará a cabo por el canal #tecnoyucas en el servidor irc.freenode.net, [aquí como conectarse al irc][4], [aquí como registrar sus nombres de usuario][5]. También se puede acceder via web desde el [WebChat de Freenode][6]. Ahí estaremos conectados a la medida de lo posible para atender cualquier interrogante, además de eso, cada semana se establecerá mínimo una reunión virtual o en persona mediante alguna plataforma gratuita, tal como los hangout de Google+, Skype o TeamSpeak.
