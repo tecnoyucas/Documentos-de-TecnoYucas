@@ -33,11 +33,11 @@ A continuación les explicaré poco a poco el resto de las características de e
 ### 1. Énfasis en oraciones: ###
 > *Énfasis simple*    **Énfasis fuerte**
 
-Para lograr ese efecto, en HTML acostumbramos a utilizar lo siguiente:
+En HTML, hacer énfasis en frases u oraciones se puede hacer de esta manera:
 
     <em>Énfasis simple</em>    <b>Énfasis fuerte</b>  
 
-En Markdown, es de la siguiente manera:
+En Markdown lo puedes hacer con menos caracteres y tienes dos posibles estilos:
 
     *Énfasis simple*    **Énfasis fuerte**
     _Énfasis simple_    __Énfasis fuerte__
@@ -50,7 +50,7 @@ Para colocar enlaces en el texto, en HTML acostumbramos a utilizar lo siguiente:
 
     <a href="http://tecnoyucas.org/">Enlace a TecnoYucas</a>
 
-En Markdown hay tres maneras de hacerlo, iremos de fácil a recomendado (por no decir difícil). La primera manera de hacerlo es simplemente colocar el enlace encerrado en un símbolo de menor-que "<" y otro de mayor-que ">", de esta manera:
+En Markdown hay tres maneras de hacerlo, iremos de fácil a recomendado (por no decir difícil). La primera manera de hacerlo es simplemente colocar el enlace dentro de un símbolo de menor-que "<" y otro de mayor-que ">", de esta manera:
 
     <http://tecnoyucas.org/>
 
@@ -71,7 +71,7 @@ El tercer método es el que más recomiendo, permite dar identificaciones única
 
 [Este enlace][Enlace1] y [este otro][Enlace2] fueron también incluidos en la codificación de este documento y pueden acceder a ellos aquí: [Enlace 1][Enlace1] y [enlace 2][Enlace2].
 
-El tercer método de colocar enlaces es sin duda mi favorito, ya que permite organizar los enlaces separados del texto y con una identificación única, que permite repetirlos en todo el contenido sin llenarlo con URLs ilegibles.
+Este último método es sin duda mi favorito, ya que permite organizar los enlaces separados del texto y con una identificación única, que permite repetirlos en todo el contenido sin llenarlo con URLs ilegibles.
 
 Un punto importante a aclarar es que **la identificación del enlace** puede estar **antes o después** del mismo. Adicionalmente deben recordar seguir la sintaxis tal cual como aparece en los ejemplos, es decir, al lado de la identificación del enlace se deben colocar los **dos puntos** ":" y después de la URL se debe colocar al menos **un espacio** para poder añadir el texto alternativo.
 
@@ -111,7 +111,7 @@ Para colocar encabezados también existen dos maneras. La primera es seguir la f
 
 Cualquier número de iguales o signos menos servirá, sin embargo, para editores mono-espaciados es quizás mejor colocar la misma cantidad de estos símbolos como tenga el texto.
 
-El segundo método es encerrar el texto con numerales "#", la cantidad de numerales equivale al número de la H que deseamos (es decir, un solo "#" será igual a H1, dos serán iguales a H2). Para cerrar el encabezados se debe colocar un mínimo de numerales igual a la cantidad que abrió el encabezado.
+El segundo método es encerrar el texto con numerales "#", la cantidad de numerales equivale al número de la H que deseamos (es decir, un solo "#" será igual a H1, dos serán iguales a H2). Para cerrar el encabezado se debe colocar un mínimo de numerales igual a la cantidad que lo abrió.
 
     # Esto es equivalente a <H1></H1> #
     ## Esto es equivalente a <H2></H2> ##
@@ -127,7 +127,7 @@ El segundo método es encerrar el texto con numerales "#", la cantidad de numera
 >    * Lista sin orden y anidada.
 >    * ...
 
-Las listas en HTML se suelen hacer de esta manera:
+Las listas en HTML suelen hacerse de esta manera:
 
     <ol>
         <li>Lista ordenada</li>
@@ -154,9 +154,9 @@ En Markdown, para hacer listas ordenadas basta con colocar el número inicial se
         * Lista sin orden y anidada.
         * ...
 
-Las listas, sin importar su nivel, asumirán que la línea que les sigue es parte de ellas, pero es recomendable colocar **cuatro espacios** antes de cada línea para un mayor entendimiento:
+Las listas, sin importar su nivel, asumirán que la línea que les sigue es parte de ellas, pero es recomendable colocar **tres espacios** después del símbolo de la lista en la primera línea y **cuatro espacios** antes de cada una de las siguientes líneas para un mayor entendimiento:
 
-    * Lista sin orden con varios párrafos
+    *   Lista sin orden con varios párrafos
         Todavía sigue dentro de la lista.
         Esto también.
 
@@ -182,7 +182,7 @@ Los bloques de citas pueden contener cualquier cosa, desde otras citas hasta có
 >          if (i == 5) alert("¡Mira, un "+i+"!");
 >     }
 
-Pre-formatear el código es uno de los aspectos más útiles de Markdown, es tan sencillo como colocar *cuatro espacios* iniciando cada una de las líneas que deban estar dentro del bloque de código. Esto en esencia solo crea las etiquetas "`<pre><span></span></pre>`" y dentro de ellas el código. Para hacer que la sintaxis se coloree debemos utilizar librerías JavaScript como [Google Code Prettify][6], para lo cual podemos insertar el siguiente código antes de terminar el "`</header>`" de nuestra página:
+Pre-formatear el código es uno de los aspectos más útiles de Markdown, es tan sencillo como colocar **cuatro espacios** iniciando cada una de las líneas que deban estar dentro del bloque de código. Esto en esencia solo crea las etiquetas "`<pre><span></span></pre>`" y dentro de ellas el código con los espacios adecuados y los caracteres escapados para que no se mezclen con el HTML. Si quieren lograr que la sintaxis se coloree deben utilizar librerías JavaScript como [Google Code Prettify][6], para lo cual deben insertar el siguiente código antes de terminar el "`</header>`" de sus páginas:
 
     <script src="http://code.jquery.com/jquery-1.6.2.min.js" type="text/javascript"></script>
     <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet"/>
