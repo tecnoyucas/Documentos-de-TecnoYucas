@@ -1,4 +1,4 @@
-[0]:http://sadasant.com/
+[0]:http://sadasant.com/ "Daniel Rodríguez"
 [1]:http://playground.magicrising.de/2008/03/performance-comparison-between-html-svg-and-canvas/ "Comparación de velocidades entre HTML, SVG y canvas"
 [2]:http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#the-canvas-element "Especificación del elemento canvas"
 [3]:http://www.khronos.org/registry/webgl/specs/latest/ "Especificación 3D del objeto canvas"
@@ -11,8 +11,13 @@
 [6e]:http://jsbin.com/enagiz/3/edit#javascript,html,live "Editar: Un cuadrado rojo persiguiendo al puntero en un canvas de borde rojo"
 [7]:http://jsbin.com/enagiz/4/ "El rectángulo volador"
 [7e]:http://jsbin.com/enagiz/4/edit#javascript,html,live "Editar: El rectángulo volador"
+[8]:http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#the-canvas-state "Especificación del elemento canvas: Estados (en ingles)"
+[9]:http://www.disfrutalasmatematicas.com/geometria/radianes.html "Más información sobre ángulos radianes"
+[10]:http://jsbin.com/opomes/2/ "El círculo volador"
+[10e]:http://jsbin.com/opomes/2/edit "Editar: El círculo volador"
+[11]:https://developer.mozilla.org/en/html/canvas "Canvas en la Red de Documentos de Mozilla"
 
-Por [Daniel R][0].
+Por @[Sadasant][0].
 
 Muchos habrán leído sobre las capacidades que *HTML5* nos trae con su etiqueta *canvas*, nos permite dibujar, editar y animar imágenes dentro del navegador; aunque sigue teniendo [limitaciones de velocidad][1], los motores *JavaScript* y los procesadores actuales están poco a poco avanzando, lo que garantiza un futuro brillante. Canvas posee sin lugar a dudas una de las funcionalidades más útiles de la programación web: hacer imágenes interactivas atentas a las acciones del usuario.
 
@@ -77,7 +82,7 @@ Para dibujar un rectángulo con canvas utilizaremos el método **fillStyle** que
      context.fillRect(50, 50, 50, 50);
 **Ejemplo**: [Ver][5], [editar][5e].
 
-Para hacer que este se altere con la posición del puntero, basta con enviarle esos datos a **fillRect**, sin embargo, para que se perciba el cambio debemos limpiar el **canvas** y volver a dibujar el rectángulo según la ubicación del puntero. Ordenando un poco las ideas, primero definiremos un objeto literal **rect** que contendrá una función **move** que nos permitirá animar al rectángulo, a esta función la llamaremos eternamente en un intervalo de 35 mili-segundos, de la siguiente manera:
+Para hacer que este se altere con la posición del puntero, basta con enviarle esos datos a **fillRect**, sin embargo, para que se perciba el cambio debemos limpiar el **canvas** y volver a dibujar el rectángulo según la ubicación del puntero. Hay varias maneras de limpiar el **canvas**, el método más sencillo es reiniciar el ancho (width) del canvas, igualándolo consigo mismo mismo. Ordenando un poco las ideas, primero definiremos un objeto literal **rect** que contendrá una función **move** que nos permitirá animar al rectángulo, a esta función la llamaremos eternamente en un intervalo de 35 mili-segundos, de la siguiente manera:
 
     var rect = {
         move: function () {
@@ -110,5 +115,29 @@ Para hacer que el rectángulo se retrase, guardaremos su posición en una variab
     };
 **Ejemplo**: [Ver][7], [editar][7e].
 
-Así conseguimos hacer, de manera sencilla, que el canvas esté al tanto de las acciones del usuario, en este caso específicamente del puntero. Gracias por su tiempo, espero les haya sido útil este tutorial, sus comentarios son bienvenidos.
+Así conseguimos hacer, de manera sencilla, que el canvas esté al tanto de las acciones del usuario, en este caso específicamente del puntero. 
+
+En un ejemplo un poco más avanzado, podríamos limpiar el *canvas* pintando toda la pantalla con un rectángulo del tamaño del *canvas*, además hacer que el color que usamos sea ligeramente transparente:
+
+      context.save();
+        context.fillStyle = "rgba(240, 240, 240, 0.3)"; // el 0.3 indica la transparencia del color RGB
+        context.fillRect(0, 0, can.width, can.height);
+      context.restore();
+
+Los métodos **save** y **restore** del *contexto* se utilizan para añadir y restaurar los estados del canvas, los estados son el entorno en donde se dibujarán las figuras, para más información pueden  leer [este documento][8].
+
+Además, podemos hacer en vez de un rectángulo, un círculo. Esto se logra utilizando los métodos del contexto **beginPath** para iniciar un patrón distinto a un rectángulo, **arc** para dibujar un patrón con un ángulo de 2π [radianes][9], cerramos el patrón con **closePath** y lo llenamos con **fill**, de esta manera:
+
+      context.save();
+          context.translate(this.x,this.y); // posición del punto inicial de dibujo
+          context.fillStyle = "#FF0000"; // color de relleno
+          context.beginPath(); // iniciamos el patrón
+              context.arc(0, 0, this.r, 0, Math.PI * 2); // dibujamos un arco circular
+          context.closePath(); // cerramos el patrón
+          context.fill(); // llenamos el patrón con el color de relleno
+      context.restore();
+
+El ejemplo de un círculo siguiendo al puntero  con cierto efecto de degradación lo pueden ver aquí: [Ver][10], [editar][10e]. Para ver más ejemplos y tutoriales, les recomiendo [la sección de canvas en los documentos de Mozilla][11].
+
+Gracias por su tiempo, espero les haya sido útil este tutorial, sus comentarios son bienvenidos.
 
