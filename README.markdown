@@ -38,4 +38,6 @@ TecnoYucas es un equipo abierto de internautas, tecnólogos y afines interesados
 * Escribir yucas para explicar el uso del irc y el github.
 * Escribir otras yucas con contenido nutritivo (sin chistes, jeje).
 
-Eso es todo por ahora. **:]**
+Eso es todo por ahora.
+
+**:]**
