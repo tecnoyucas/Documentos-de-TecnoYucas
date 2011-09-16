@@ -56,6 +56,8 @@ Se harán al menos dos eventos por trimestre, un encuentro cultural y otro para 
 Cualquier Yuquero puede proponer eventos adicionales, así como la participación en eventos externos.
 
 # Puntos de Proyectos #
-Los puntos de proyectos institucionales serán proporcionales al porcentaje de yucas hechas en un trimestre de 12 semanas (6 yucas mínimo por trimestre).
+Los nuevos participantes deberán hacer al menos 5 yucas durante su primer trimestre para obtener la nota completa de proyectos institucionales. A partir del siguiente trimestre deberán hacer 6, lo ideal sería que cada persona se tomara cómodamente unos 15 días entre la entrega de cada una de las yucas. La primera yuca entregada deberá hacerse entre las primeras tres semanas de la universidad si eres nuevo en el equipo, y entre las primeras dos semanas si ya has participado un trimestre con anterioridad; esa yuca será considerada como la inscripción de la persona en el equipo. La nota final será equivalente al porcentaje de yucas que se hagan, siendo el máximo (100%) cinco para los de nuevo ingreso y seis para quienes hayan participado con anterioridad.
+
+Recuerden que el éxito individual y comunitario lo lograremos si mantenemos una comunicación activa, así nos ayudaremos todos a progresar.
 
 :) los esperamos.
