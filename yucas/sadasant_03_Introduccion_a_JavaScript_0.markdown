@@ -16,7 +16,7 @@ por [Daniel R][0].
 
 Este documento es el primero de una serie de tutoriales dedicados a proveer una guía práctica para entender y hacer uso del lenguaje de programación *JavaScript*. Está redactado con la intención de que entuciastas del código o programadores avanzados puedan conocer más sobre este lenguaje. Si desean empezar desde cero en el mundo de la programación web, les recomiendo [este libro en línea][0l] (está en inglés).
 
-En esta "primera edición" me enfocaré a contar un resumen de la historia del lenguaje, sus valores, condicionales, ciclos y el alcance de las variables. En las siguientes semanas cubriré la interacción con el el contenido de los sitios web, el uso y límites de las librerías más comunes, los principios básicos de la programación orientada a objetos y mezclaré todo con las capacidades del paradigma de programación funcional que tiene *JavaScript*.
+En esta "primera edición" me enfocaré a contar un resumen de la historia del lenguaje, sus valores, operadores, condicionales, ciclos y el alcance de las variables. En las siguientes semanas cubriré la interacción con el el contenido de los sitios web, el uso y límites de las librerías más comunes, los principios básicos de la programación orientada a objetos y mezclaré todo con las capacidades del paradigma de programación funcional que tiene *JavaScript*.
 
 Antes de este tutorial les comento que he hecho otros relacionados, si tienen interés sobre los puntos que tocan no duden en revisarlos:
 
@@ -123,6 +123,52 @@ Para obtener valores dentro de los objetos literales se pueden buscar diréctame
 
 Tanto los arreglos literales como los objetos literales pueden contener *lo que sea*, incluyendo otros objetos y funciones.
 
+### Operadores ###  
+
+Antes de seguir es importante entender los operadores de JavaScript, estos nos permitirán asignar valores, cambiar valores y/o compararlos con otros.
+
+Los operadores son símbolos especiales que indican operaciones sencillas entre valores y/o variables, por ejemplo, los operadores aritméticos son los siguientes:
+
+    x + 1; // suma
+    x - 1; // resta
+    x * 1; // multiplicación
+    x / 1; // división
+
+Los operadores más comunes para la asignación de variables son los siguientes:
+
+    x = 1;   // x obtiene el valor 1
+    x += 1;  // x aumenta su valor en uno
+    x -= 1;  // x disminuye su valor en uno
+    x *= 1;  // x multiplica su valor por uno
+    x /= 1;  // x divide su valor entre 1
+    x++;     // x aumenta su valor en 1
+    x--;     // x disminuye su valor en 1
+
+Cuando colocan un operador antes de un igual, están igualando la variable al resultado de utilizar el operador con lo que se encuentra al otro lado de la variable, entonces:
+
+    /* Son lo mismo */
+    x += 1;
+    x = x + 1;
+
+    /* Son lo mismo */
+    x -= 1;
+    x = x - 1;
+
+También existen operadores comparativos, los cuales son:
+
+    (x == 1)  // ¿x es igual a 1?
+    (x != 1)  // ¿x no es igual a 1?
+    (x === 1) // ¿x es igual a 1 y son del mismo tipo de variable?
+    (x !== 1) // ¿x no es igual a 1 ni a su tipo de variable?
+    (x > 1)   // ¿x es mayor que 1?
+    (x < 1)   // ¿x es menor que 1?
+    (x >= 1)  // ¿x es mayor o igual a 1?
+    (x <= 1)  // ¿x es menor o igual a 1? 
+
+Losparéntesis son necesarios para aislar las operaciones del resto del código, así como para ordenar quienes se ejecutarán primero, por ejemplo: en "`x / y + z`" se dividirían primero "`x / y`" y luego se sumarían con "z", en cambio, si colocamos esa operación así: "`x / ( y + z )`" primero se suman "`y + z`" y luego "x" se divide entre esa suma.
+
+ En [este enlace](https://developer.mozilla.org/es/Gu%C3%ADa_JavaScript_1.5/Expresiones_y_operadores#Operadores) pueden conseguir la lista detallada de los operadores que posee JavaScript.
+
 ### Condicionales ###  
 
 Con variables no es suficiente, hace falta una estructura lógica para poder interactuar con ellas. Los condicionales nos permiten separar procesos de ejecución si una afirmación se cumple. Por ejemplo, si declaramos una variable con un valor tres (3), podríamos compararla con otra variable y ejecutar diferentes acciones según sean iguales o distintas, así:
@@ -177,52 +223,6 @@ Otro modo de hacer condicionales es utilizando los operadores ternarios, básica
     
 En el ejemplo anterior, la variable "a" contendrá "Es un tres" si es igual a 3, de lo contrario se le asignará "No es un tres".
 
-### Operadores ###  
-
-Antes de seguir es importante entender los operadores de JavaScript, estos nos permitirán asignar valores, cambiar valores y/o compararlos con otros.
-
-Los operadores son símbolos especiales que indican operaciones sencillas entre valores y/o variables, por ejemplo, los operadores aritméticos son los siguientes:
-
-    x + 1; // suma
-    x - 1; // resta
-    x * 1; // multiplicación
-    x / 1; // división
-
-Los operadores más comunes para la asignación de variables son los siguientes:
-
-    x = 1;   // x obtiene el valor 1
-    x += 1;  // x aumenta su valor en uno
-    x -= 1;  // x disminuye su valor en uno
-    x *= 1;  // x multiplica su valor por uno
-    x /= 1;  // x divide su valor entre 1
-    x++;     // x aumenta su valor en 1
-    x--;     // x disminuye su valor en 1
-
-Cuando colocan un operador antes de un igual, están igualando la variable al resultado de utilizar el operador con lo que se encuentra al otro lado de la variable, entonces:
-
-    /* Son lo mismo */
-    x += 1;
-    x = x + 1;
-
-    /* Son lo mismo */
-    x -= 1;
-    x = x - 1;
-
-También existen operadores comparativos, los cuales son:
-
-    (x == 1)  // ¿x es igual a 1?
-    (x != 1)  // ¿x no es igual a 1?
-    (x === 1) // ¿x es igual a 1 y son del mismo tipo de variable?
-    (x !== 1) // ¿x no es igual a 1 ni a su tipo de variable?
-    (x > 1)   // ¿x es mayor que 1?
-    (x < 1)   // ¿x es menor que 1?
-    (x >= 1)  // ¿x es mayor o igual a 1?
-    (x <= 1)  // ¿x es menor o igual a 1? 
-
-Losparéntesis son necesarios para aislar las operaciones del resto del código, así como para ordenar quienes se ejecutarán primero, por ejemplo: en "`x / y + z`" se dividirían primero "`x / y`" y luego se sumarían con "z", en cambio, si colocamos esa operación así: "`x / ( y + z )`" primero se suman "`y + z`" y luego "x" se divide entre esa suma.
-
- En [este enlace](https://developer.mozilla.org/es/Gu%C3%ADa_JavaScript_1.5/Expresiones_y_operadores#Operadores) pueden conseguir la lista detallada de los operadores que posee JavaScript.
-
 ### Ciclos ###  
 
 El siguiente paso para hacer que el código sea eficiente es mediante el uso de ciclos. Los ciclos evitan que tengamos que re-inicializar todo el programa cada vez que queramos repetir un resultado, o mejor aún, permiten repetir secuencias lógicas con nuevos valores de entrada una cantidad de veces determinada (aunque podrían ser infinitas).
@@ -244,7 +244,7 @@ El modo mas intuitivo de hacer ciclos es mediante la expresión `for`, la cual s
         alert(i);
     }
 
-[Ver ejemplo](http://jsbin.com/esepah/edit#preview), [Editar ejemplo](http://jsbin.com/esepah/edit#javascript).
+[Ver ejemplo](http://jsbin.com/esepah/edit#preview), [editar ejemplo](http://jsbin.com/esepah/edit#javascript).
 
 Es usual en los ciclos "`for`" utilizar el operador de asignación "++", que aumenta en uno el contenido de la variable, así mismo, si utilizáramos "--" se restaría en uno, lo que nos permitiría, por ejemplo, empezar en "`i = 10`" e ir restándole uno a "i" hasta que sea cero. Al colocar los *signos dobles* después de la variable hacen que la variable se afecte al terminar el bloque del ciclo, en cambio si, por ejemplo, colocáramos los signos dobles antes de la variable: "`for (var i = 0; i < 11; ++i)`", el bloque del ciclo empezaría con uno en vez de cero.
 
