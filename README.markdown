@@ -40,3 +40,4 @@ TecnoYucas es un equipo abierto de internautas, tecnólogos y afines interesados
 
 Eso es todo por ahora.
 
+\m/
