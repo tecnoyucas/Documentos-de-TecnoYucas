@@ -39,4 +39,3 @@ TecnoYucas es un equipo abierto de internautas, tecnólogos y afines interesados
 * Escribir otras yucas con contenido nutritivo (sin chistes, jeje).
 
 Eso es todo por ahora.
-
